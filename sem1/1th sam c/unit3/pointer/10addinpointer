@@ -1,0 +1,17 @@
+//new_address= current_address + (number * size_of(data type))  
+
+
+#include<stdio.h>
+
+int main() {
+    int number = 50;
+    int *m = &number; // Use the address-of operator to get the address of 'number'
+    
+    printf("Print the value of address before adding: %p\n", m);
+    
+    m = m + 3;
+    
+    printf("Print the value of address after adding: %p\n", m);
+    
+    return 0;
+}

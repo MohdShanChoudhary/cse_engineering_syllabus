@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main() {
+    int num1, num2, sum;
+    int *ptr1, *ptr2;
+
+    // Initialize values
+    num1 = 5;
+    num2 = 7;
+
+    // Assign addresses of variables to pointers
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    // Calculate the sum using pointers
+    sum = *ptr1 + *ptr2;
+
+    // Print the result
+    printf("Sum: %d\n", sum);
+
+    return 0;
+}
